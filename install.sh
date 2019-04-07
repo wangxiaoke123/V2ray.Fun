@@ -65,7 +65,7 @@ curl -L -s https://install.direct/go.sh | bash
 
 #Install V2ray.Fun
 cd /usr/local/
-git clone https://github.com/FunctionClub/V2ray.Fun
+git clone https://github.com/vpnv2ray/V2ray.Fun
 
 #Generate Default Configurations
 cd /usr/local/V2ray.Fun/ && python init.py
