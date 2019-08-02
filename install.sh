@@ -37,7 +37,7 @@ fi
 if [ ${OS} == Ubuntu ] || [ ${OS} == Debian ];then
 	apt-get update -y
 	apt-get install wget curl socat git unzip python python-dev openssl libssl-dev ca-certificates supervisor -y
-	wget -O - "https://bootstrap.pypa.io/get-pip.py" | python
+	wget -O - "https://raw.githubusercontent.com/wangxiaoke123/V2ray.Fun/master/get-pip.py" | python
 	pip install --upgrade pip
 	pip install flask requests urllib3 Flask-BasicAuth Jinja2 requests six wheel
 	pip install pyOpenSSL
@@ -52,7 +52,7 @@ if [ ${OS} == CentOS ];then
 fi
 
 if [ ${Debian_version} == 9 ];then
-	wget -N --no-check-certificate https://raw.githubusercontent.com/FunctionClub/V2ray.Fun/master/enable-debian9-rclocal.sh
+	wget -N --no-check-certificate https://raw.githubusercontent.com/wangxiaoke123/V2ray.Fun/master/enable-debian9-rclocal.sh
 	bash enable-debian9-rclocal.sh
 	rm enable-debian9-rclocal.sh
 fi
